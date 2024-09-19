@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es2016",                                 
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./dist", 
+    "paths": {
+      "@interfaces/*": [
+        "./src/interfaces/*"
+      ],
+      "@models/*": [
+        "./src/models/*"
+      ],
+      "@config": [
+        "./src/config"
+      ],
+      "@controllers/*": [
+        "./src/controllers/*"
+      ],
+      "@middlewares": [
+        "./src/middlewares"
+      ],
+      "@errors": [
+        "./src/errors"
+      ],
+      "@utils": [
+        "./src/utils"
+      ],
+
+
+    },                               
+    "esModuleInterop": true,                             
+    "forceConsistentCasingInFileNames": true,           
+    "strict": true,                                     
+    "skipLibCheck": true                                 
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
